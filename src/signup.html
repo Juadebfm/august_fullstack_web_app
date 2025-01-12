@@ -26,8 +26,10 @@
         class="w-[349px] h-auto border-b border-input_seperator_line"
       />
       <form
+        id="signup-form"
         class="flex flex-col items-start w-full lg:w-[22%] mx-[20px] lg:mx-8"
       >
+        <!-- Username Input -->
         <div class="w-full mt-5">
           <label for="username" class="uppercase text-[9px] text-[#9397B3]">
             Username
@@ -36,43 +38,61 @@
             class="flex items-center justify-between border-b border-input_seperator_line pb-8"
           >
             <input
+              id="username"
               type="text"
               placeholder="type here"
               class="placeholder:text-[14px] placeholder:text-[#9397B3]/70 placeholder:capitalize outline-none focus:outline-none border-none focus:border-none text-[#9397b3]"
             />
-            <i class="bx bx-user"> </i>
+            <i class="bx bx-user"></i>
           </div>
+          <p id="username-error" class="text-red-500 text-sm hidden">
+            Invalid username
+          </p>
         </div>
+
+        <!-- Phone Input -->
         <div class="w-full mt-5">
-          <label for="username" class="uppercase text-[9px] text-[#9397B3]">
+          <label for="phone" class="uppercase text-[9px] text-[#9397B3]">
             Phone
           </label>
           <div
             class="flex items-center justify-between border-b border-input_seperator_line pb-8"
           >
             <input
+              id="phone"
               type="text"
               placeholder="type here"
               class="placeholder:text-[14px] placeholder:text-[#9397B3]/70 placeholder:capitalize outline-none focus:outline-none border-none focus:border-none text-[#9397b3]"
             />
             <i class="bx bx-phone"></i>
           </div>
+          <p id="phone-error" class="text-red-500 text-sm hidden">
+            Invalid phone number
+          </p>
         </div>
+
+        <!-- Email Input -->
         <div class="w-full mt-5">
-          <label for="username" class="uppercase text-[9px] text-[#9397B3]">
+          <label for="email" class="uppercase text-[9px] text-[#9397B3]">
             Email
           </label>
           <div
             class="flex items-center justify-between border-b border-input_seperator_line pb-8"
           >
             <input
-              type="text"
+              id="email"
+              type="email"
               placeholder="type here"
               class="placeholder:text-[14px] placeholder:text-[#9397B3]/70 placeholder:capitalize outline-none focus:outline-none border-none focus:border-none text-[#9397b3]"
             />
             <i class="bx bx-envelope"></i>
           </div>
+          <p id="email-error" class="text-red-500 text-sm hidden">
+            Invalid email address
+          </p>
         </div>
+
+        <!-- Password Input -->
         <div class="w-full mt-5">
           <label for="password" class="uppercase text-[9px] text-[#9397B3]">
             Password
@@ -81,31 +101,68 @@
             class="flex items-center justify-between border-b border-input_seperator_line pb-8"
           >
             <input
-              type="text"
+              id="password"
+              type="password"
               placeholder="type here"
               class="placeholder:text-[14px] placeholder:text-[#9397B3]/70 placeholder:capitalize outline-none focus:outline-none border-none focus:border-none text-[#9397b3]"
             />
             <i class="bx bxs-key"></i>
           </div>
+          <p id="password-strength" class="text-sm mt-2">
+            Password strength: <span id="strength-indicator">Weak</span>
+          </p>
+          <p id="password-error" class="text-red-500 text-sm hidden">
+            Password does not meet requirements
+          </p>
         </div>
+
+        <!-- Confirm Password Input -->
+        <div class="w-full mt-5">
+          <label
+            for="confirm-password"
+            class="uppercase text-[9px] text-[#9397B3]"
+          >
+            Confirm Password
+          </label>
+          <div
+            class="flex items-center justify-between border-b border-input_seperator_line pb-8"
+          >
+            <input
+              id="confirm-password"
+              type="password"
+              placeholder="type here"
+              class="placeholder:text-[14px] placeholder:text-[#9397B3]/70 placeholder:capitalize outline-none focus:outline-none border-none focus:border-none text-[#9397b3]"
+            />
+            <i class="bx bxs-lock"></i>
+          </div>
+          <p id="confirm-password-error" class="text-red-500 text-sm hidden">
+            Passwords do not match
+          </p>
+        </div>
+
+        <div
+          class="mt-16 mb-12 text-[#9397B3] text-sm font-extralight flex items-center justify-center flex-col w-full mx-auto"
+        >
+          <p>Forgot Password <i class="bx bx-chevron-right"></i></p>
+          <p>
+            Already have an account?
+            <a href="/src/login.html" class="text-main_blue_light font-normal">
+              Login
+            </a>
+          </p>
+        </div>
+        <!-- Submit Button -->
+        <button
+          id="signup-button"
+          class="bg-disabled_btn_bg text-disabled_btn_text_gray btn_dagcoin cursor-not-allowed mb-16"
+          disabled
+        >
+          Signup
+        </button>
       </form>
-      <div
-        class="mt-16 mb-12 text-[#9397B3] text-sm font-extralight flex items-center justify-center flex-col"
-      >
-        <p>Forgot Password <i class="bx bx-chevron-right"></i></p>
-        <p>
-          Already have an account?
-          <a href="/src/login.html" class="text-main_blue_light font-normal">
-            Login
-          </a>
-        </p>
-      </div>
-      <button
-        class="bg-disabled_btn_bg text-disabled_btn_text_gray btn_dagcoin cursor-not-allowed mb-16"
-        disabled
-      >
-        Signup
-      </button>
     </div>
+
+    <!-- Script -->
+    <script src="./utils//signup.js"></script>
   </body>
 </html>
