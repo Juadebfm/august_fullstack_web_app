@@ -9,7 +9,7 @@
       rel="stylesheet"
     />
 
-    <title>Dagcoin - Login</title>
+    <title>Dagcoin - Signup</title>
   </head>
   <body class="overflow-x-hidden">
     <header class="flex flex-col md:flex-row items-center justify-between p-9">
@@ -44,6 +44,36 @@
           </div>
         </div>
         <div class="w-full mt-5">
+          <label for="username" class="uppercase text-[9px] text-[#9397B3]">
+            Phone
+          </label>
+          <div
+            class="flex items-center justify-between border-b border-input_seperator_line pb-8"
+          >
+            <input
+              type="text"
+              placeholder="type here"
+              class="placeholder:text-[14px] placeholder:text-[#9397B3]/70 placeholder:capitalize outline-none focus:outline-none border-none focus:border-none text-[#9397b3]"
+            />
+            <i class="bx bx-phone"></i>
+          </div>
+        </div>
+        <div class="w-full mt-5">
+          <label for="username" class="uppercase text-[9px] text-[#9397B3]">
+            Email
+          </label>
+          <div
+            class="flex items-center justify-between border-b border-input_seperator_line pb-8"
+          >
+            <input
+              type="text"
+              placeholder="type here"
+              class="placeholder:text-[14px] placeholder:text-[#9397B3]/70 placeholder:capitalize outline-none focus:outline-none border-none focus:border-none text-[#9397b3]"
+            />
+            <i class="bx bx-envelope"></i>
+          </div>
+        </div>
+        <div class="w-full mt-5">
           <label for="password" class="uppercase text-[9px] text-[#9397B3]">
             Password
           </label>
@@ -64,9 +94,9 @@
       >
         <p>Forgot Password <i class="bx bx-chevron-right"></i></p>
         <p>
-          Don't have an account?
-          <a href="/src/signup.html" class="text-main_blue_light font-normal">
-            Signup
+          Already have an account?
+          <a href="/src/login.html" class="text-main_blue_light font-normal">
+            Login
           </a>
         </p>
       </div>
@@ -74,7 +104,7 @@
         class="bg-disabled_btn_bg text-disabled_btn_text_gray btn_dagcoin cursor-not-allowed mb-16"
         disabled
       >
-        Login
+        Signup
       </button>
     </div>
   </body>
