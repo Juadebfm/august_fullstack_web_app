@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .btn_dagcoin {
+    @apply w-[350px] h-[55px] text-[17px] rounded-2xl flex items-center justify-center hover:shadow-white/20 hover:shadow-md transition-all duration-300;
+  }
+}

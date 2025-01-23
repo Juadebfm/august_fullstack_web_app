@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Dagcoin - Login</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <header class="flex flex-col md:flex-row items-center justify-between p-9">
+      <img src="/assets/main_logo.png" alt="" class="w-auto h-[56px]" />
+      <span class="text-main_black font-light uppercase text-[19px]">
+        Signup
+      </span>
+      <div></div>
+    </header>
+    <div class="flex flex-col items-center justify-center m-16">
+      <img
+        src="/assets/signup_dagcoin.png"
+        alt=""
+        class="w-[349px] h-auto border-b border-input_seperator_line"
+      />
+      <form
+        class="flex flex-col items-start w-full lg:w-[22%] mx-[20px] lg:mx-8"
+      >
+        <div class="w-full mt-5">
+          <label for="username" class="uppercase text-[9px] text-[#9397B3]">
+            Username
+          </label>
+          <div
+            class="flex items-center justify-between border-b border-input_seperator_line pb-8"
+          >
+            <input
+              type="text"
+              placeholder="type here"
+              class="placeholder:text-[14px] placeholder:text-[#9397B3]/70 placeholder:capitalize outline-none focus:outline-none border-none focus:border-none text-[#9397b3]"
+            />
+            <i class="bx bx-user"> </i>
+          </div>
+        </div>
+        <div class="w-full mt-5">
+          <label for="password" class="uppercase text-[9px] text-[#9397B3]">
+            Password
+          </label>
+          <div
+            class="flex items-center justify-between border-b border-input_seperator_line pb-8"
+          >
+            <input
+              type="text"
+              placeholder="type here"
+              class="placeholder:text-[14px] placeholder:text-[#9397B3]/70 placeholder:capitalize outline-none focus:outline-none border-none focus:border-none text-[#9397b3]"
+            />
+            <i class="bx bxs-key"></i>
+          </div>
+        </div>
+      </form>
+      <div
+        class="mt-16 mb-12 text-[#9397B3] text-sm font-extralight flex items-center justify-center flex-col"
+      >
+        <p>Forgot Password <i class="bx bx-chevron-right"></i></p>
+        <p>
+          Don't have an account?
+          <a href="/src/signup.html" class="text-main_blue_light font-normal">
+            Signup
+          </a>
+        </p>
+      </div>
+      <button
+        class="bg-disabled_btn_bg text-disabled_btn_text_gray btn_dagcoin cursor-not-allowed mb-16"
+        disabled
+      >
+        Login
+      </button>
+    </div>
+  </body>
+</html>
