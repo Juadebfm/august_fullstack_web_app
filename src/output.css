@@ -784,6 +784,10 @@ video {
   text-transform: uppercase;
 }
 
+.lowercase{
+  text-transform: lowercase;
+}
+
 .text-\[\#9397B3\]{
   --tw-text-opacity: 1;
   color: rgb(147 151 179 / var(--tw-text-opacity, 1));
